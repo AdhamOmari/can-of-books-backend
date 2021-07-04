@@ -1,7 +1,7 @@
 
 # Project Name can-of-books-backend
 
-**Author**: Qusai AlQ-eisi && Adham Alomari
+**Author**:Adham Alomari &&  Qusai AlQ-eisi was the navigateur
 
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
@@ -24,15 +24,15 @@
 Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: ________________________________
+Name of feature: _________class11_______________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __4___
 
-Start time: _____
+Start time: ___3__
 
-Finish time: _____
+Finish time: __9___
 
-Actual time needed to complete: _____
+Actual time needed to complete: ____6_
 
 
 # Start your own "Can of Books" App
