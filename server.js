@@ -20,7 +20,7 @@ const getKey=(header, callback)=>{
       });
 }
 app.get('/',(req,res)=>{
-    res.send('work')
+    res.send('proof of life route')
 });
 
 // 'Bearer ;alsdkj;laskd;lkasd;lkl'
