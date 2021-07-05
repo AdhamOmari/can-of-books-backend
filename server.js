@@ -19,6 +19,9 @@ const getKey=(header, callback)=>{
         callback(null, signingKey);
       });
 }
+app.get('/',(req,res)=>{
+    res.send('work')
+});
 
 // 'Bearer ;alsdkj;laskd;lkasd;lkl'
 app.get('/authorize',(req,res)=>{
