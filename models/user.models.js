@@ -31,8 +31,7 @@ const seedUser = () => {
         ],
     });
 
-    console.log(userAdham);
-    console.log(forYou);
+    console.log(userAdham.arryBooks);
 
     userAdham.save();
     forYou.save();

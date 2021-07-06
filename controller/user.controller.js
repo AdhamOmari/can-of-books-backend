@@ -2,14 +2,15 @@
 const userModel=require ('../models/user.models')
 
 const booksShow=(req,res)=>{
-    userEmail=req.query.email,
-    arryEnd=req.query.arryBooks
+     userEmail=req.query.email,
+     arryEnd = req.query.arryBooks
 
-    userModel.findOne({email:userEmail,arryBooks:arryEnd},(error,user)=>{
-        if(error){
-            res.send(error,massege)
+    userModel.findOne({email:userEmail,arryBooks:arryEnd},(user)=>{
+        if(!user){
+            res.send('not find')
         }
-        res.send(user)
+        res.send(user.arryEnd);
+        console.log('this is from the user controller',user);
     })
 
 }
