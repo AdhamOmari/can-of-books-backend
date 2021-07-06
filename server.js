@@ -39,6 +39,7 @@ app.get('/authorize',(req,res)=>{
         }
         res.send(user)
     })
+    
     res.send(token);
 });
 app.get('/book',controllerUser);
