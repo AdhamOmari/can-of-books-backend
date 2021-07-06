@@ -24,7 +24,7 @@
 Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: _________class11_______________________
+Name of feature: _________class12_______________________
 
 Estimate of time needed to complete: __4___
 
