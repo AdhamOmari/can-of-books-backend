@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
     arryBooks: [BookSchema],
 
 })
-const userModels = mongoose.model('userModels', userSchema)
+const userModels = mongoose.model('user', userSchema)
 const seedUser = () => {
     const userAdham = new userModels({
         email: 'adhamOmaai@yahoo.com',
@@ -27,15 +27,15 @@ const seedUser = () => {
             { name: 'take note', description: 'life', status: 'new' },
             { name: 'secret agent', description: 'crim', status: 'used' },
             { name: 'Fifty Shades of darkness', description: 'Fifty Shades of Grey', status: 'new' },
-
         ],
     });
+    
 
     console.log(userAdham);
     console.log(forQusai);
-
     userAdham.save();
     forQusai.save();
+   
 }
 seedUser();
 module.exports = userModels;
