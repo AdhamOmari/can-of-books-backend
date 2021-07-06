@@ -31,6 +31,10 @@ const seedUser = () => {
     });
     
 
+
+    console.log(userAdham.arryBooks);
+
+
     console.log(userAdham);
     console.log(forQusai);
     userAdham.save();
