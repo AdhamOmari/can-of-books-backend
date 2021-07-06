@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const controllerUser = require('./controller/user.controller');
 
 
-mongoose.connect('mongodb://localhost:27017/userModels',
+mongoose.connect('mongodb://localhost:27017/user',
 { useNewUrlParser: true, useUnifiedTopology: true });
 
 
