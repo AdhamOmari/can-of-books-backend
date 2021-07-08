@@ -1,40 +1,20 @@
 'use strict '
 const userModel=require ('../models/user.models')
-
 const booksShow=(req,res)=>{
-
-     userEmail=req.query.email,
-     arryEnd = req.query.arryBooks
-
-    userModel.findOne({email:userEmail,arryBooks:arryEnd},(user)=>{
-        if(!user){
-            res.send('not find')
-        }
-        res.send(user.arryEnd);
-        console.log('this is from the user controller',user);
-
     userEmail=req.query.email,
     // arryEnd=req.query.arryBooks
-
     userModel.findOne({email:userEmail},(error,user)=>{
         if(error){
             res.send(error,massege)
         }else{
-
             res.send(user)
         }
- main
     })
-
 }
-
-
 // add new book 
-
 const addBook=(req,res)=>{
     const {email,name,description,status}= req.body;
-    
-    userModel.findOne({email:userEmail}, (error, user)=>{
+    userModel.findOne({email:email}, (error, user)=>{
         if(error){
             res.send('error');
         }else{
@@ -47,10 +27,7 @@ const addBook=(req,res)=>{
             res.send(user.arryBooks);
         }
     })
-        
 }
-
-
 // delete book
 const deleteBook=(req,res)=>{
     const email=req.query.email;
@@ -67,8 +44,14 @@ const deleteBook=(req,res)=>{
         user.save();
         res.send( user.arryBooks)
     });
-
 }
-
-
 module.exports={booksShow,addBook,deleteBook};
+
+
+
+
+
+
+
+
+
