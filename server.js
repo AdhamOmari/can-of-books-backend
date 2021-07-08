@@ -7,7 +7,7 @@ const jwksClient=require('jwks-rsa');
 require('dotenv').config();
 app.use(cors());
 const mongoose = require('mongoose');
-const controllerUser = require('./controller/user.controller');
+const {booksShow,addBook,deleteBook} = require('./controller/user.controller');
 
 
 mongoose.connect('mongodb://localhost:27017/user',
@@ -42,7 +42,16 @@ app.get('/authorize',(req,res)=>{
     
     res.send(token);
 });
-app.get('/book',controllerUser);
+
+
+app.get('/book',booksShow);
+
+app.post('/addbook',addBook);
+
+// user delete book end-point
+app.delete('/deletebook/:index',deleteBook)
+
+
 app.listen(process.env.PORT,()=>{
     console.log(`listening to port: ${process.env.PORT}`);
 })
