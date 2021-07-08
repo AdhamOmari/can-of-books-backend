@@ -20,9 +20,9 @@ const booksShow=(req,res)=>{
 // add new book 
 
 const addBook=(req,res)=>{
-    const {email,name,description,status}= req.body;
+    const {userEmail,name,description,status} = req.body;
     
-    userModel.findOne({email:userEmail}, (error, user)=>{
+    userModel.findOne({email:userEmail}, (error,user)=>{
         if(error){
             res.send('error');
         }else{
